@@ -1,0 +1,48 @@
+.icon-pack{
+  color: #3c3c3c;
+  padding-left: 1%;
+  text-align: center;
+  @media screen and (max-width:360px){
+      margin-left: 12%;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 54px;
+  &__company-name {
+    display: block;
+    color: #bbb;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+}
+
+.social-links {
+  margin-top: 16px;
+  a:hover {
+    text-decoration: none;
+  }
+  .fa {
+    font-size: 20px;
+    margin: 0 12px;
+    color: rgba(0, 0, 0, 0.2)
+  }
+  .fa-github {
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .fa-twitter {
+    &:hover {
+      color: $c-twitter-blue;
+    }
+  }
+  .fa-facebook {
+    &:hover {
+      color: $c-facebook-blue;
+    }
+  }
+}

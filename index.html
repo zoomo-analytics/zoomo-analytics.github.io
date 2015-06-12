@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+
+<!-- Start of the section post-loop-->
+<section class="post-loop container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+            {% for post in site.posts %}
+            <div class="row index-post">
+                    <h2 class="index-post__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+                    <div class="index-post__details">
+                        <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+
+                    </div>
+
+                    <div class="index-post__excerpt">
+                        {{post.excerpt | length: 140 }}
+                    </div>
+
+                    <a class="index-post__cta" href="{{ post.url }}">More</a>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+

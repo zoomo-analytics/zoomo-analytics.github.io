@@ -1,0 +1,923 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Add the vars and mixins */
+/* List of vars */
+/* Mixnis */
+/* mixin sizes */
+/* Typo */
+/*Variant of buttons*/
+/*Various kinds of colors and stuff*/
+/*Styles for different states*/
+/*3d style button*/
+/*Making flat styles*/
+/*Block buttons*/
+/* Add the partials */
+/* List of vars */
+/* Mixnis */
+/* mixin sizes */
+/* Typo */
+/*Variant of buttons*/
+/*Pi button styles*/
+/*Sizes of the various kinds*/
+/* line 20, ../sass/default.scss */
+.pi-big {
+  padding: 20px 20px;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  margin-bottom: 1px;
+  display: inline-block;
+  font-family: "Monostate", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 0.1em;
+  text-decoration: none;
+}
+
+/* line 33, ../sass/default.scss */
+.pi-mid {
+  padding: 15px 10px;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  margin-bottom: 1px;
+  display: inline-block;
+  font-family: "Monostate", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #ffffff;
+  line-height: 0.1em;
+  text-decoration: none;
+}
+
+/* line 46, ../sass/default.scss */
+.pi-small {
+  padding: 10px 8px;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  margin-bottom: 1px;
+  display: inline-block;
+  font-family: "Monostate", sans-serif;
+  font-weight: 600;
+  font-size: 0.5em;
+  color: #ffffff;
+  line-height: 0.1em;
+  text-decoration: none;
+}
+
+/* line 59, ../sass/default.scss */
+.pi-block {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/*This is the various styles of colors*/
+/* line 65, ../sass/default.scss */
+.pi-default {
+  background-color: #32A367;
+  border: solid 1px #001728;
+}
+
+/* line 68, ../sass/default.scss */
+.pi-default:hover, .pi-default:focus, .pi-default.focus, .pi-default:active, .pi-default.active {
+  background-color: #206842;
+  border-color: black;
+}
+
+/* line 71, ../sass/default.scss */
+.pi-default.disabled, .pi-default [disabled] {
+  opacity: 0.55;
+  filter: opacity(55%);
+}
+
+/* line 74, ../sass/default.scss */
+.pi-default.disabled:hover, .pi-default.disabled:focus, .pi-default.disabled.focus, .pi-default.disabled:active, .pi-default.disabled.active, .pi-default [disabled]:hover, .pi-default [disabled]:focus, .pi-default [disabled].focus, .pi-default [disabled]:active, .pi-default [disabled].active {
+  background-color: #32A367;
+  border-color: #00345b;
+}
+
+/* line 78, ../sass/default.scss */
+.pi-primary {
+  background-color: #0093FC;
+  border: solid 1px #001728;
+}
+
+/* line 81, ../sass/default.scss */
+.pi-primary:hover, .pi-primary:focus, .pi-primary.focus, .pi-primary:active, .pi-primary.active {
+  background-color: #0066b0;
+  border-color: black;
+}
+
+/* line 84, ../sass/default.scss */
+.pi-primary.disabled, .pi-primary [disabled] {
+  opacity: 0.55;
+  filter: opacity(55%);
+}
+
+/* line 87, ../sass/default.scss */
+.pi-primary.disabled:hover, .pi-primary.disabled:focus, .pi-primary.disabled.focus, .pi-primary.disabled:active, .pi-primary.disabled.active, .pi-primary [disabled]:hover, .pi-primary [disabled]:focus, .pi-primary [disabled].focus, .pi-primary [disabled]:active, .pi-primary [disabled].active {
+  background-color: #0093FC;
+  border-color: #00345b;
+}
+
+/* line 91, ../sass/default.scss */
+.pi-night {
+  background-color: #293C40;
+  border: solid 1px #001728;
+}
+
+/* line 94, ../sass/default.scss */
+.pi-night:hover, .pi-night:focus, .pi-night.focus, .pi-night:active, .pi-night.active {
+  background-color: #0b1011;
+  border-color: black;
+}
+
+/* line 97, ../sass/default.scss */
+.pi-night.disabled, .pi-night [disabled] {
+  opacity: 0.55;
+  filter: opacity(55%);
+}
+
+/* line 100, ../sass/default.scss */
+.pi-night.disabled:hover, .pi-night.disabled:focus, .pi-night.disabled.focus, .pi-night.disabled:active, .pi-night.disabled.active, .pi-night [disabled]:hover, .pi-night [disabled]:focus, .pi-night [disabled].focus, .pi-night [disabled]:active, .pi-night [disabled].active {
+  background-color: #293C40;
+  border-color: #00345b;
+}
+
+/* line 104, ../sass/default.scss */
+.pi-warn {
+  background-color: #BF4724;
+  border: solid 1px #001728;
+}
+
+/* line 107, ../sass/default.scss */
+.pi-warn:hover, .pi-warn:focus, .pi-warn.focus, .pi-warn:active, .pi-warn.active {
+  background-color: #7f2f18;
+  border-color: black;
+}
+
+/* line 110, ../sass/default.scss */
+.pi-warn.disabled, .pi-warn [disabled] {
+  opacity: 0.55;
+  filter: opacity(55%);
+}
+
+/* line 113, ../sass/default.scss */
+.pi-warn.disabled:hover, .pi-warn.disabled:focus, .pi-warn.disabled.focus, .pi-warn.disabled:active, .pi-warn.disabled.active, .pi-warn [disabled]:hover, .pi-warn [disabled]:focus, .pi-warn [disabled].focus, .pi-warn [disabled]:active, .pi-warn [disabled].active {
+  background-color: #BF4724;
+  border-color: #00345b;
+}
+
+/* line 117, ../sass/default.scss */
+.pi-retro {
+  background-color: #5A3779;
+  border: solid 1px #001728;
+}
+
+/* line 120, ../sass/default.scss */
+.pi-retro:hover, .pi-retro:focus, .pi-retro.focus, .pi-retro:active, .pi-retro.active {
+  background-color: #331f44;
+  border-color: black;
+}
+
+/* line 123, ../sass/default.scss */
+.pi-retro.disabled, .pi-retro [disabled] {
+  opacity: 0.55;
+  filter: opacity(55%);
+}
+
+/* line 126, ../sass/default.scss */
+.pi-retro.disabled:hover, .pi-retro.disabled:focus, .pi-retro.disabled.focus, .pi-retro.disabled:active, .pi-retro.disabled.active, .pi-retro [disabled]:hover, .pi-retro [disabled]:focus, .pi-retro [disabled].focus, .pi-retro [disabled]:active, .pi-retro [disabled].active {
+  background-color: #5A3779;
+  border-color: #00345b;
+}
+
+/* line 130, ../sass/default.scss */
+.pi-water {
+  background-color: #C6C4C8;
+  border: solid 1px #001728;
+}
+
+/* line 133, ../sass/default.scss */
+.pi-water:hover, .pi-water:focus, .pi-water.focus, .pi-water:active, .pi-water.active {
+  background-color: #a09ca3;
+  border-color: black;
+}
+
+/* line 136, ../sass/default.scss */
+.pi-water.disabled, .pi-water [disabled] {
+  opacity: 0.55;
+  filter: opacity(55%);
+}
+
+/* line 139, ../sass/default.scss */
+.pi-water.disabled:hover, .pi-water.disabled:focus, .pi-water.disabled.focus, .pi-water.disabled:active, .pi-water.disabled.active, .pi-water [disabled]:hover, .pi-water [disabled]:focus, .pi-water [disabled].focus, .pi-water [disabled]:active, .pi-water [disabled].active {
+  background-color: #C6C4C8;
+  border-color: #00345b;
+}
+
+/*Extra button styles*/
+/* line 144, ../sass/default.scss */
+.pi-3d {
+  box-shadow: 0px 4px 0px #1E2721;
+}
+
+/* line 147, ../sass/default.scss */
+.pi-flat {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+/* Core mixins */
+/*Various kinds of colors and stuff*/
+/*Styles for different states*/
+/*3d style button*/
+/*Making flat styles*/
+/*Block buttons*/
+/*# sourceMappingURL=style.css.map */
+/*This is the header section styles*/
+/* line 4, ../sass/partials/_header.scss */
+.header {
+  width: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 15, ../sass/partials/_header.scss */
+.header h2 {
+  text-align: center;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.2em;
+  margin-top: 10%;
+}
+/* line 24, ../sass/partials/_header.scss */
+.header h2 a {
+  margin-left: 0%;
+  color: #fff;
+}
+/* line 32, ../sass/partials/_header.scss */
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-width: 360px) {
+  /* line 32, ../sass/partials/_header.scss */
+  .header a {
+    margin-left: 60%;
+  }
+}
+/* line 41, ../sass/partials/_header.scss */
+.header .tab {
+  font-weight: 900;
+  font-size: 1.4em;
+}
+/* line 46, ../sass/partials/_header.scss */
+.header .social-pack {
+  text-align: center;
+}
+/* line 48, ../sass/partials/_header.scss */
+.header .social-pack a {
+  text-decoration: none;
+}
+/* line 50, ../sass/partials/_header.scss */
+.header .social-pack a:hover {
+  color: #00b3ee;
+}
+
+/* line 1, ../sass/partials/_post-loop.scss */
+.post-loop {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 360px) {
+  /* line 1, ../sass/partials/_post-loop.scss */
+  .post-loop {
+    margin: 0% 5%;
+  }
+}
+/* line 10, ../sass/partials/_post-loop.scss */
+.post-loop .post-title {
+  font-size: 1.6em;
+  font-weight: 900;
+  color: #777;
+  letter-spacing: 0.07em;
+}
+/* line 18, ../sass/partials/_post-loop.scss */
+.post-loop .post-excerpt {
+  font-size: 0.9em;
+  margin-top: 2%;
+  line-height: 1.5em;
+}
+/* line 26, ../sass/partials/_post-loop.scss */
+.post-loop .single-post + .single-post {
+  margin-top: 10%;
+}
+
+/* line 34, ../sass/partials/_post-loop.scss */
+.post-details em {
+  color: #444444;
+  font-size: .9em;
+  display: inline;
+  float: left;
+  padding-right: 1%;
+}
+/* line 42, ../sass/partials/_post-loop.scss */
+.post-details ul {
+  font-size: 0.9em;
+}
+/* line 44, ../sass/partials/_post-loop.scss */
+.post-details ul li {
+  list-style: none;
+  display: inline;
+}
+/* line 47, ../sass/partials/_post-loop.scss */
+.post-details ul li a {
+  background-color: #07736B;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* line 62, ../sass/partials/_post-loop.scss */
+.pagignation {
+  margin-left: 22%;
+  margin-bottom: 5%;
+  display: block;
+}
+/* line 67, ../sass/partials/_post-loop.scss */
+.pagignation ul {
+  list-style: none;
+}
+/* line 70, ../sass/partials/_post-loop.scss */
+.pagignation ul .page-numbers a {
+  text-decoration: none;
+  float: left;
+  margin-left: 3px;
+}
+
+/* line 1, ../sass/partials/_footer.scss */
+.icon-pack {
+  color: #3c3c3c;
+  padding-left: 1%;
+  text-align: center;
+}
+@media screen and (max-width: 360px) {
+  /* line 1, ../sass/partials/_footer.scss */
+  .icon-pack {
+    margin-left: 12%;
+  }
+}
+
+/* line 10, ../sass/partials/_footer.scss */
+.footer {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 54px;
+}
+/* line 14, ../sass/partials/_footer.scss */
+.footer__company-name {
+  display: block;
+  color: #bbb;
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* line 23, ../sass/partials/_footer.scss */
+.social-links {
+  margin-top: 16px;
+}
+/* line 25, ../sass/partials/_footer.scss */
+.social-links a:hover {
+  text-decoration: none;
+}
+/* line 28, ../sass/partials/_footer.scss */
+.social-links .fa {
+  font-size: 20px;
+  margin: 0 12px;
+  color: rgba(0, 0, 0, 0.2);
+}
+/* line 34, ../sass/partials/_footer.scss */
+.social-links .fa-github:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 39, ../sass/partials/_footer.scss */
+.social-links .fa-twitter:hover {
+  color: #55acee;
+}
+/* line 44, ../sass/partials/_footer.scss */
+.social-links .fa-facebook:hover {
+  color: #3A5795;
+}
+
+/*This is the styles of single page post header*/
+/* line 2, ../sass/partials/_single-header.scss */
+.single-post-title {
+  text-align: center;
+  font-weight: 900;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  display: inline;
+  margin-left: 42%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 360px) {
+  /* line 2, ../sass/partials/_single-header.scss */
+  .single-post-title {
+    margin-left: 30%;
+    display: inline-block;
+  }
+}
+
+/* line 16, ../sass/partials/_single-header.scss */
+.single-about-link {
+  text-decoration: none;
+  color: #0f0f0f;
+  margin-left: 25%;
+}
+@media screen and (max-width: 360px) {
+  /* line 16, ../sass/partials/_single-header.scss */
+  .single-about-link {
+    margin-left: 78%;
+  }
+}
+
+/* line 26, ../sass/partials/_single-header.scss */
+.single-post-image-holder {
+  max-width: 100%;
+  height: 50%;
+}
+/* line 34, ../sass/partials/_single-header.scss */
+.single-post-image-holder .single-post-img {
+  padding: 5% 10%;
+  z-index: -1;
+  overflow: hidden;
+  max-width: inherit;
+  height: inherit;
+}
+
+/* line 16, ../sass/partials/_post.scss */
+.single-post-title-main {
+  padding: 40px 10% 8px 10%;
+  font-size: 32px;
+  color: #FE7564;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* line 25, ../sass/partials/_post.scss */
+.post {
+  padding: 0 10% 24px 10%;
+  line-height: 1.5;
+}
+/* line 29, ../sass/partials/_post.scss */
+.post h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  font-weight: 800;
+  margin-top: 42px;
+  margin-bottom: 12px;
+}
+/* line 38, ../sass/partials/_post.scss */
+.post p {
+  margin-bottom: 12px;
+}
+/* line 42, ../sass/partials/_post.scss */
+.post ul {
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+/* line 47, ../sass/partials/_post.scss */
+.post li {
+  list-style: circle;
+  margin-bottom: 6px;
+}
+/* line 52, ../sass/partials/_post.scss */
+.post a {
+  color: #6489FE;
+}
+/* line 56, ../sass/partials/_post.scss */
+.post b, .post strong {
+  font-weight: 800;
+}
+/* line 60, ../sass/partials/_post.scss */
+.post i, .post em {
+  font-style: italic;
+}
+/* line 64, ../sass/partials/_post.scss */
+.post code {
+  padding: 2px 8px;
+  font-family: monospace;
+  border-radius: 0;
+  color: #ff5151;
+  background-color: #fff3f3;
+}
+/* line 71, ../sass/partials/_post.scss */
+.post img {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+/* line 76, ../sass/partials/_post.scss */
+.post figcaption {
+  margin-top: -12px;
+  margin-bottom: 24px;
+  font-style: italic;
+  font-size: 13px;
+}
+/* line 83, ../sass/partials/_post.scss */
+.post .gist {
+  margin-bottom: 24px;
+}
+/* line 87, ../sass/partials/_post.scss */
+.post blockquote {
+  font-size: 1.9em;
+  font-style: italic;
+  font-weight: 600;
+  color: #262626;
+  margin-left: 0% !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+/* line 97, ../sass/partials/_post.scss */
+.post img {
+  max-width: 100%;
+}
+
+/* line 103, ../sass/partials/_post.scss */
+.post-details {
+  border-top: 1px solid #eee;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+/* line 107, ../sass/partials/_post.scss */
+.post-details .categories {
+  margin-top: 12px;
+}
+/* line 109, ../sass/partials/_post.scss */
+.post-details .categories p {
+  display: inline-block;
+}
+/* line 112, ../sass/partials/_post.scss */
+.post-details .categories ul {
+  display: inline-block;
+}
+/* line 115, ../sass/partials/_post.scss */
+.post-details .categories li {
+  display: inline-block;
+  margin: 2px 0;
+}
+/* line 118, ../sass/partials/_post.scss */
+.post-details .categories li a {
+  background-color: #7CB342;
+  border-radius: 0;
+  padding: 6px;
+  display: inline-block;
+}
+
+/* line 128, ../sass/partials/_post.scss */
+.single-author {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* line 133, ../sass/partials/_post.scss */
+.comments {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+/* line 136, ../sass/partials/_post.scss */
+.comments__title {
+  text-align: center;
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  /* line 146, ../sass/partials/_post.scss */
+  .single-post-title-main {
+    font-size: 26px;
+  }
+
+  /* line 149, ../sass/partials/_post.scss */
+  .single-post-title-main, .post, .single-author {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 155, ../sass/partials/_post.scss */
+  .post h2 {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  /* line 162, ../sass/partials/_post.scss */
+  .comments__title {
+    font-size: 24px;
+  }
+}
+/* line 1, ../sass/partials/_about.scss */
+.about-header {
+  margin-left: 38%;
+  margin-top: 6%;
+}
+/* line 6, ../sass/partials/_about.scss */
+.about-header img {
+  margin: 5% 8%;
+}
+/* line 10, ../sass/partials/_about.scss */
+.about-header h2 {
+  font-family: "Monostate", sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+@media screen and (max-width: 360px) {
+  /* line 1, ../sass/partials/_about.scss */
+  .about-header {
+    margin-left: 27%;
+  }
+  /* line 17, ../sass/partials/_about.scss */
+  .about-header img {
+    margin: 5% 5%;
+  }
+  /* line 20, ../sass/partials/_about.scss */
+  .about-header h2 {
+    margin-left: 0%;
+    font-size: 1.5em;
+  }
+}
+
+/* line 29, ../sass/partials/_about.scss */
+.about-bio {
+  margin: 5% 10%;
+  font-size: 1.3em;
+  font-family: "Monostate", sans-serif;
+  font-weight: 200;
+}
+
+/* line 1, ../sass/partials/_common.scss */
+a {
+  text-decoration: none;
+}
+/* line 3, ../sass/partials/_common.scss */
+a:hover {
+  color: #ff00000 !important;
+}
+
+/* line 10, ../sass/custom.scss */
+h1, h2, h3, h4, p, input, a, button, li, body {
+  font-family: "proxima-nova", sans-serif;
+}
+
+/* line 14, ../sass/custom.scss */
+p {
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+/* line 19, ../sass/custom.scss */
+.margin-0 {
+  margin: 0;
+}
+
+/**************************************/
+/* Header */
+/**************************************/
+/* line 27, ../sass/custom.scss */
+.header {
+  background-image: url("../img/science.png");
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 24px;
+}
+/* line 34, ../sass/custom.scss */
+.header__content {
+  position: relative;
+  z-index: 10;
+  padding-top: 50px;
+}
+/* line 40, ../sass/custom.scss */
+.header__github {
+  z-index: 20;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  font-size: 16px;
+  background-color: #7CB342;
+  padding: 12px;
+  margin-left: 0;
+}
+/* line 49, ../sass/custom.scss */
+.header__github .fa-github {
+  margin-right: 4px;
+}
+/* line 52, ../sass/custom.scss */
+.header__github:hover {
+  background-color: #6fa03b;
+}
+/* line 57, ../sass/custom.scss */
+.header__logo {
+  margin: 0 auto;
+  width: 80px;
+  display: block;
+  margin-bottom: 36px;
+}
+/* line 64, ../sass/custom.scss */
+.header__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
+}
+/* line 71, ../sass/custom.scss */
+.header__title a {
+  margin: 0 auto;
+}
+/* line 76, ../sass/custom.scss */
+.header__subtitle {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+/* line 82, ../sass/custom.scss */
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 118, 101, 0.85);
+  z-index: 1;
+}
+
+/**************************************/
+/* Post on index page */
+/**************************************/
+/* line 98, ../sass/custom.scss */
+.index-post {
+  padding-bottom: 42px;
+  padding-top: 42px;
+  border-bottom: 1px dotted #aaa;
+}
+/* line 104, ../sass/custom.scss */
+.index-post:last-of-type {
+  border: none;
+}
+/* line 108, ../sass/custom.scss */
+.index-post__title {
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+/* line 111, ../sass/custom.scss */
+.index-post__title a {
+  color: #FE7564;
+  font-size: 24px;
+  font-weight: 800;
+}
+/* line 118, ../sass/custom.scss */
+.index-post__details {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #FE7564;
+  opacity: 0.7;
+}
+/* line 127, ../sass/custom.scss */
+.index-post__cta {
+  background-color: #FE7564;
+  color: white;
+  margin-top: 12px;
+  display: inline-block;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 135, ../sass/custom.scss */
+.index-post__cta:hover {
+  text-decoration: none;
+  background-color: #fe4831;
+  color: white;
+}
+/* line 142, ../sass/custom.scss */
+.index-post__excerpt {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/**************************************/
+/* Media queries */
+/**************************************/
+@media (max-width: 768px) {
+  /* line 154, ../sass/custom.scss */
+  .xs-hidden {
+    display: none;
+  }
+
+  /* line 157, ../sass/custom.scss */
+  .header {
+    min-height: 340px;
+  }
+  /* line 159, ../sass/custom.scss */
+  .header__content {
+    padding-top: 40px;
+  }
+  /* line 162, ../sass/custom.scss */
+  .header__logo {
+    width: 60px;
+    height: 66px;
+    margin-bottom: 28px;
+  }
+  /* line 167, ../sass/custom.scss */
+  .header__title {
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+  /* line 171, ../sass/custom.scss */
+  .header__subtitle {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+  /* line 177, ../sass/custom.scss */
+  .header__github .fa {
+    margin-right: 0;
+    font-size: 20px;
+  }
+}

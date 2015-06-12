@@ -1,0 +1,14 @@
+# Site settings
+title: "Analytics test"
+smalltalk: "Sherlock Season 4"
+description:  "Technical blog of Zoomo"
+baseurl: #
+paginate: 5
+url: "www.gozoomo.com"
+twitter_username: "gozoomo"
+github_username: "youngmonk"
+facebook_username: "gozoomo"
+portfolio_url: 
+
+# Build settings
+markdown: kramdown
