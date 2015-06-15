@@ -97,7 +97,7 @@ function mixpanel_track(event, params){
     parameters.session_id=getSessionCookieOrCreate('session_id');
     parameters.new_uuid=getCookie('new_uuid');
 
-    if(event=='Conversion'){
+    if(event=='Conversion' || event=='Conversion2'){
         fire_facebook_conversion();
         fire_ga_conversion();
         fire_adwords_conversion();
