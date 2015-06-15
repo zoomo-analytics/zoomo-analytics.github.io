@@ -9,9 +9,11 @@ layout: default
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
             {% for post in site.posts %}
             <div class="row index-post">
-                    <h2 class="index-post__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                    <!--<h2 class="index-post__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>-->
+                <h2 class="index-post__title"><a>{{ post.title }}</a></h2>
 
-                    <div class="index-post__details">
+
+                <div class="index-post__details">
                         <p>{{ post.date | date: "%b %-d, %Y" }}</p>
 
                     </div>
@@ -20,7 +22,7 @@ layout: default
                         {{post.excerpt | length: 140 }}
                     </div>
 
-                    <a class="index-post__cta" href="{{ post.url }}">More</a>
+                    <!--<a class="index-post__cta" href="{{ post.url }}">More</a>-->
                 <a class="index-post__cta" href="#" onclick="mixpanel_track('Conversion')">Convert</a>
             </div>
 
