@@ -83,11 +83,16 @@ function fire_facebook_conversion(){
 }
 
 function fire_ga_conversion(){
+    //ga('send', 'pageview');
     ga('send', 'event', 'All', 'Conversion');
 }
 
 function fire_adwords_conversion(){
     goog_report_conversion();
+}
+
+function fire_segment_conversion(){
+    analytics.track('Segment_Conversion');
 }
 
 function mixpanel_track(event, params){
@@ -101,6 +106,7 @@ function mixpanel_track(event, params){
         fire_facebook_conversion();
         fire_ga_conversion();
         fire_adwords_conversion();
+        fire_segment_conversion();
         parameters.conversion_type=changeCookieOrCreateCustom('conversion_type','new','old',365);
     }
 
