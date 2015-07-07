@@ -92,7 +92,8 @@ function fire_adwords_conversion(){
 }
 
 function fire_segment_conversion(){
-    analytics.track('Segment_Conversion');
+    //analytics.track({event:'Segment_Conversion'});
+    analytics.track('Segment_Conversion',{event:'Segment_Conversion'});
 }
 
 function mixpanel_track(event, params){
@@ -103,14 +104,14 @@ function mixpanel_track(event, params){
     parameters.new_uuid=getCookie('new_uuid');
 
     if(event=='Conversion' || event=='Conversion2'){
-        fire_facebook_conversion();
-        fire_ga_conversion();
-        fire_adwords_conversion();
+        //fire_facebook_conversion();
+        //fire_ga_conversion();
+        //fire_adwords_conversion();
         fire_segment_conversion();
         parameters.conversion_type=changeCookieOrCreateCustom('conversion_type','new','old',365);
     }
 
     if(params!=null) { parameters=merge_options(parameters,params); }
 
-    mixpanel.track(event, parameters);
+    //mixpanel.track(event, parameters);
 }
