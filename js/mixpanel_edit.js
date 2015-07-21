@@ -104,10 +104,10 @@ function mixpanel_track(event, params){
     parameters.new_uuid=getCookie('new_uuid');
 
     if(event=='Conversion' || event=='Conversion2'){
-        //fire_facebook_conversion();
-        //fire_ga_conversion();
-        //fire_adwords_conversion();
-        fire_segment_conversion();
+        fire_facebook_conversion();
+        fire_ga_conversion();
+        fire_adwords_conversion();
+        //fire_segment_conversion();
         parameters.conversion_type=changeCookieOrCreateCustom('conversion_type','new','old',365);
     }
 
